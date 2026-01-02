@@ -1,3 +1,4 @@
+import streamlit as st
 from streamlit_pages import Page, navigation
 
 # Define your pages
