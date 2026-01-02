@@ -1,12 +1,15 @@
 import streamlit as st
-from streamlit_pages import Page, navigation
 
-# Define your pages
+st.set_page_config(
+    page_title="Hello",
+    page_icon="👋",
+)
+
 pages = [
     Page("pages/order_request_form.py", "Home", "🏠"),
     Page("pages/order_fulfillment.py", "Fulfillment", "📊"),
 ]
 
-# Initialize and run navigation
-app = navigation.StreamlitNavigation(pages, initial_page="Home")
-app.run()
+st.write("# Welcome to Streamlit! 👋")
+
+st.sidebar.success("Select a page above.")
