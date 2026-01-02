@@ -4,6 +4,11 @@ from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import col
 from snowflake.snowpark.functions import when_matched
 
+st.set_page_config(page_title="Order Fulfillment Form", page_icon="📈")
+
+st.markdown("# Order Fulfillment")
+st.sidebar.header("Order Fulfillment Form")
+
 # Write directly to the app
 st.title(f":cup_with_straw: Fulfill Smoothie Order :cup_with_straw:")
 cnx = st.connection("snowflake")

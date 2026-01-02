@@ -4,6 +4,11 @@ import pandas as pd
 import requests
 from snowflake.snowpark.functions import col
 
+st.set_page_config(page_title="Order Request Form", page_icon="📈")
+
+st.markdown("# Order Request")
+st.sidebar.header("Order Request Form")
+
 # Write directly to the app
 st.title(f":cup_with_straw: Customize Your Smoothie :cup_with_straw:")
 st.write(
